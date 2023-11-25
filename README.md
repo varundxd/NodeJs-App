@@ -1,4 +1,4 @@
-# 🏕 Camper's World
+<h1># 🏕 Camper's World</h1>
 
 <p>
   <img src="https://i.imgur.com/NCajIoR.png" alt="campground">
@@ -9,7 +9,7 @@ Camper's World is a website where users can create and review campgrounds. In or
 
 This project was created using Node.js, Express, MongoDB, and Bootstrap. Passport.js was used to handle authentication.
 
-# Features
+<h2>Features</h2>
 <ul>
 <li>Users can create, edit, and remove campgrounds</li>
 <li>Users can review campgrounds once, and edit or remove their review</li>

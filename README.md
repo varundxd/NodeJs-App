@@ -46,7 +46,7 @@ Express - Fast, unopinionated, minimalist web framework for Node.js<br>
 MongoDB - The database for modern applications<br>
 Mongoose - Elegant MongoDB object modeling for Node.js<br>
 ejs - Embedded JavaScript templating<br>
-
+<br>
 Run ```mongodb``` in another terminal and ```node index.js``` or ```nodemon index.js``` in the terminal with the project.
 
 Then go to localhost:3000.

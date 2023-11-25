@@ -41,11 +41,11 @@ npm install
 ```
 
 <h3>Built With</h3>
-Node.js - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-express - Fast, unopinionated, minimalist web framework for Node.js
-MongoDB - The database for modern applications
-Mongoose - Elegant MongoDB object modeling for Node.js
-ejs - Embedded JavaScript templating
+Node.js - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.<br>
+Express - Fast, unopinionated, minimalist web framework for Node.js<br>
+MongoDB - The database for modern applications<br>
+Mongoose - Elegant MongoDB object modeling for Node.js<br>
+ejs - Embedded JavaScript templating<br>
 
 Run ```mongodb``` in another terminal and ```node index.js``` or ```nodemon index.js``` in the terminal with the project.
 

@@ -18,6 +18,7 @@ This project was created using Node.js, Express, MongoDB, and Bootstrap. Passpor
 <li>Sort campgrounds by highest rating, most reviewed, lowest price, or highest price</li>
 </ul>
 Configure these environmental variables as per your account credentials on Platforms like Cloudinary, MongoAtlas, Mapbox:
+
 ```
 MAPBOX_TOKEN='<your_mapbox_token'
 DB_URL='your_mongodb_url>'
@@ -27,3 +28,25 @@ CLOUDINARY_SECRET='<your_cloudinary_secret>'
 SECRET='<any_string>'
 
 ```
+<h3>Run it locally</h3>
+<ol>
+<li>Install mongodb.</li>
+<li>Create a cloudinary account to get an API key and secret code.</li>
+</ol>
+
+```
+git clone https://github.com/leovenom/YelpCamp.git
+cd YelpCamp
+npm install
+```
+
+<h3>Built With</h3>
+Node.js - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+express - Fast, unopinionated, minimalist web framework for Node.js
+MongoDB - The database for modern applications
+Mongoose - Elegant MongoDB object modeling for Node.js
+ejs - Embedded JavaScript templating
+
+Run ```mongodb``` in another terminal and ```node index.js``` or ```nodemon index.js``` in the terminal with the project.
+
+Then go to localhost:3000.

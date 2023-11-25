@@ -1,0 +1,8 @@
+{
+    "name": "readline-history",
+    "version": "1.2.0",
+    "description": "Adds support for saving history to a file, and loading it next time automatically.",
+    "license": "WTFPL",
+    "files": ["readline-history.js","test-readline-history.js","README"],
+    "main": "readline-history"
+}

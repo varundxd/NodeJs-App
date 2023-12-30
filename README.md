@@ -16,7 +16,7 @@ This project was crafted as part of Colt Steele's esteemed web development cours
 <li>🏕 Campground Creation & Management: Users can effortlessly create, edit, and remove campgrounds.</li>
 <li>📝 Authentic Reviews: Users can post reviews once and have the freedom to edit or remove them later.</li>
 <li>👤 User Profiles: Dive deep into user profiles, showcasing details like full name, email, phone, join date, and more! Plus, manage your campgrounds and profile with ease.</li>
-<li>🔍 Search & Sort: Explore campgrounds with intuitive search by name or location. Sort listings based on ratings, reviews, or pricing.</li>
+<li>🔍 Search: Explore campgrounds with intuitive search by name of campground. 
 </ol>
 
 <h3>📦 Configuration & Setup</h3>

@@ -35,7 +35,7 @@ SECRET='<any_string>'
 <li>Install MongoDB.</li>
 Create a Cloudinary account to obtain your API key and secret code.</li>
 <li>Clone the repository:
-<b>git clone https://github.com/leovenom/YelpCamp.git</b></li>
+<b>git clone https://github.com/varundxd/NodeJs-App.git</b></li>
 <li>cd YelpCamp
 npm install
 <li>Run the project:

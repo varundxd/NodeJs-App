@@ -21,16 +21,17 @@ This project was crafted as part of Colt Steele's esteemed web development cours
 
 <h3>📦 Configuration & Setup</h3>
 To run Camper's World locally, you'll need to set up the following environmental variables:
-````
-MAPBOX_TOKEN='<your_mapbox_token>'
-DB_URL='your_mongodb_url>'
-CLOUDINARY_CLOUD_NAME='<your_cloud_name>'
-CLOUDINARY_KEY='<your_cloudinary_key>'
-CLOUDINARY_SECRET='<your_cloudinary_secret>'
-SECRET='<any_string>'
-````
-  
-<h3>🚀 Getting Started</h3>
+**
+<ul>
+<li>MAPBOX_TOKEN='<your_mapbox_token>'</li>
+<li>DB_URL='your_mongodb_url>'</li>
+<li>CLOUDINARY_CLOUD_NAME='<your_cloud_name>'</li>
+<li>CLOUDINARY_KEY='<your_cloudinary_key>'</li>
+<li>CLOUDINARY_SECRET='<your_cloudinary_secret>'</li>
+<li>SECRET='<any_string>'</li>
+</ul>
+**
+###🚀 Getting Started###
 <ul>
 <li>Install MongoDB.</li>
 Create a Cloudinary account to obtain your API key and secret code.</li>

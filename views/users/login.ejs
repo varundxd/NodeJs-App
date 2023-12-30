@@ -7,11 +7,15 @@
         <div class="card-body mb-3">
           <h5 class="card-title">Login</h5>
           <form action="/login" method="POST" class="validated-form" novalidate>
+
             <div class="mb-3">
               <label class="form-label" for="username">Username</label>
               <input class="form-control" type="text" id="username" name="username" autofocus required>
               <div class="valid-feedback">
-                Looks good!
+                Username looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter a valid username.
               </div>
             </div>
 
@@ -19,13 +23,52 @@
               <label class="form-label" for="password">Password</label>
               <input class="form-control" type="password" id="password" name="password" required>
               <div class="valid-feedback">
-                Looks good!
+                Password looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter a valid password. Password should be at least 8 characters long and contain a mix of uppercase, lowercase, and numbers.
               </div>
             </div>
-            <button class="btn btn-success btn-block">Login</button>
+
+            <button class="btn btn-success btn-block" type="submit">Login</button>
+
           </form>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const usernameInput = document.getElementById('username');
+  const passwordInput = document.getElementById('password');
+  const passwordFeedback = document.querySelector('.invalid-feedback'); // Selecting the feedback element
+
+  usernameInput.addEventListener('input', function() {
+    if (usernameInput.value.trim().length > 0) {
+      usernameInput.classList.add('is-valid');
+      usernameInput.classList.remove('is-invalid');
+    } else {
+      usernameInput.classList.add('is-invalid');
+      usernameInput.classList.remove('is-valid');
+    }
+  });
+
+  passwordInput.addEventListener('input', function() {
+    if (passwordInput.value.trim().length === 0) {
+      passwordInput.classList.remove('is-valid');
+      passwordInput.classList.add('is-invalid');
+      passwordFeedback.style.display = 'block'; // Displaying the feedback
+    } else if (validatePassword(passwordInput.value)) {
+      passwordInput.classList.add('is-valid');
+      passwordInput.classList.remove('is-invalid');
+      passwordFeedback.style.display = 'none'; // Hiding the feedback
+    } else {
+      passwordInput.classList.add('is-invalid');
+      passwordInput.classList.remove('is-valid');
+      passwordFeedback.style.display = 'block'; // Displaying the feedback
+    }
+  });
+});
+</script>

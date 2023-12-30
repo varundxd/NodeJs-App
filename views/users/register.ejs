@@ -3,37 +3,103 @@
   <div class="row">
     <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4 mb-3">
       <div class="card shadow">
-        <img src="https://images.unsplash.com/photo-1571863533956-01c88e79957e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
-            alt="" class="card-img-top" />
+        <img src="https://images.unsplash.com/photo-1571863533956-01c88e79957e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="" class="card-img-top" />
         <div class="card-body">
           <h5 class="card-title">Register</h5>
           <form action="/register" method="POST" class="validated-form" novalidate>
+
             <div class="mb-3">
               <label class="form-label" for="username">Username</label>
               <input class="form-control" type="text" id="username" name="username" required autofocus>
               <div class="valid-feedback">
-                Looks good!
+                Username looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter a valid username.
               </div>
             </div>
+
             <div class="mb-3">
               <label class="form-label" for="email">Email</label>
               <input class="form-control" type="email" id="email" name="email" required>
               <div class="valid-feedback">
-                Looks good!
+                Email looks good!
+              </div>
+              <div class="invalid-feedback" id="emailFeedback">
+                Please enter a valid email.
               </div>
             </div>
+
             <div class="mb-3">
               <label class="form-label" for="password">Password</label>
               <input class="form-control" type="password" id="password" name="password" required>
               <div class="valid-feedback">
-                Looks good!
+                Password looks good!
+              </div>
+              <div class="invalid-feedback" id="passwordFeedback">
+                Password should be at least 8 characters long and contain a mix of uppercase, lowercase, and numbers.
               </div>
             </div>
-            <button class="btn btn-success btn-block">Register</button>
-          </form>
 
+            <button class="btn btn-success btn-block" type="submit">Register</button>
+
+          </form>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  function validateEmail(email) {
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return regex.test(email);
+  }
+
+  function validatePassword(password) {
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    return regex.test(password);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const emailFeedback = document.getElementById('emailFeedback');
+    const passwordFeedback = document.getElementById('passwordFeedback');
+    const form = document.querySelector('.validated-form'); // select the form
+
+    emailInput.addEventListener('input', function() {
+      if (validateEmail(emailInput.value)) {
+        emailInput.classList.add('is-valid');
+        emailInput.classList.remove('is-invalid');
+        emailFeedback.style.display = 'none';
+      } else {
+        emailInput.classList.add('is-invalid');
+        emailInput.classList.remove('is-valid');
+        emailFeedback.style.display = 'block';
+      }
+    });
+
+    passwordInput.addEventListener('input', function() {
+      if (validatePassword(passwordInput.value)) {
+        passwordInput.classList.add('is-valid');
+        passwordInput.classList.remove('is-invalid');
+        passwordFeedback.style.display = 'none';
+      } else {
+        passwordInput.classList.add('is-invalid');
+        passwordInput.classList.remove('is-valid');
+        passwordFeedback.style.display = 'block';
+      }
+    });
+
+    form.addEventListener('submit', function(event) {
+      if (!validateEmail(emailInput.value) || !validatePassword(passwordInput.value)) {
+        event.preventDefault(); // prevent form submission
+        emailInput.classList.add('is-invalid');
+        passwordInput.classList.add('is-invalid');
+        emailFeedback.style.display = 'block';
+        passwordFeedback.style.display = 'block';
+      }
+    });
+  });
+</script>

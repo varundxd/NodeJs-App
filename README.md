@@ -37,7 +37,7 @@ To run Camper's World locally, you'll need to set up the following environmental
 Create a Cloudinary account to obtain your API key and secret code.</li>
 <li>Clone the repository:
 <b>git clone https://github.com/varundxd/NodeJs-App.git</b></li>
-<li><b>npm install
+<li>Inside the root directory run :<b>npm install
 </b>
 </li>
 <li>Run the project:

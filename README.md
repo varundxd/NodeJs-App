@@ -43,9 +43,9 @@ npm install
   <ol>
 <li>Start MongoDB in a separate terminal.</li>
 <li>Launch the application using:
-node index.js
+<b>node index.js</b>
 or if you prefer, use nodemon:
-nodemon index.js</li>
+<b>nodemon index.js</b></li>
 <li>Access Locally: Navigate to localhost:3000 in your browser.</li>
 </ol></li>
 </ul>

@@ -34,8 +34,9 @@ To run Camper's World locally, you'll need to set up the following environmental
 <h3>🚀 Getting Started</h3>
 <ul>
 <li>Install MongoDB.</li>
-<li>Create a Cloudinary account to obtain your API key and secret code.</li></ul>
-**Clone the repository:**
+<li>Create a Cloudinary account to obtain your API key and secret code.</li>
+</ul>
+***Clone the repository:***
 ```bash
 git clone https://github.com/varundxd/NodeJs-App.git
 ```

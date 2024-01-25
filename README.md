@@ -43,15 +43,14 @@ git clone https://github.com/varundxd/NodeJs-App.git
 **Inside the root directory run :**
 ```bash
   npm install
-```
+  
 <ul>
-<li>Run the project:
-  <ol>
+**Run the project:**
 <li>Start MongoDB in a separate terminal.</li>
-**Launch the application using:**
-```bash
+Launch the application using:
+```bash  
 node index.js
-```
+
 or if you prefer,
 **use nodemon:**
 ```bash

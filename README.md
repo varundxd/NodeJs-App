@@ -34,29 +34,22 @@ To run Camper's World locally, you'll need to set up the following environmental
 <h3>🚀 Getting Started</h3>
 <ul>
 <li>Install MongoDB.</li>
-<li>Create a Cloudinary account to obtain your API key and secret code.</li>
-</ul>
-***Clone the repository:***
-```bash
-git clone https://github.com/varundxd/NodeJs-App.git
-```
-**Inside the root directory run :**
-```bash
-  npm install
-  
-<ul>
-**Run the project:**
+Create a Cloudinary account to obtain your API key and secret code.</li>
+<li>Clone the repository:
+<b>git clone https://github.com/varundxd/NodeJs-App.git</b></li>
+<li><b>npm install
+<li>Inside the root directory run :<b>npm install
+</b>
+</li>
+<li>Run the project:
+  <ol>
 <li>Start MongoDB in a separate terminal.</li>
-Launch the application using:
-```bash  
-node index.js
-
-or if you prefer,
-**use nodemon:**
-```bash
-nodemon index.js
-```
+<li>Launch the application using:
+<b>node index.js</b>
+or if you prefer, use nodemon:
+<b>nodemon index.js</b></li>
 <li>Access Locally: Navigate to localhost:3000 in your browser.</li>
+</ol></li>
 </ul>
 <h3>🛠 Tech Stack</h3>
 <ul>
@@ -66,7 +59,7 @@ nodemon index.js
 <li>Mongoose: Elegant MongoDB object modeling for Node.js.</li>
 <li>ejs: Embedded JavaScript templating for dynamic content rendering.</li>
 </ul>
-
+  
 <h3>👋 Contribute & Engage</h3>
 
 Found a bug or have a feature request? Please open an issue.

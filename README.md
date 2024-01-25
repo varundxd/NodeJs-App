@@ -38,7 +38,7 @@ To run Camper's World locally, you'll need to set up the following environmental
 **Clone the repository:**
 ```bash
 git clone https://github.com/varundxd/NodeJs-App.git
-
+```
 **Inside the root directory run :**
 ```bash
   npm install
